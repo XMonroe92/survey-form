@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+  <div class="gradient">
+    <div>
+    <h1 id="title">A Survey with Daniel</h1>
+    <p id="description">Why don't you tell me about you?</p>
+  </div>
+    <div>
+    <form id="survey-form" action="get">
+      <div class="form-control">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Let's start with a name" required>
+      </div>
+      <div class="form-control">
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" id="email" placeholder="Your digital contact" required>
+      </div>
+      <div class="form-control">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="0" max="85" placeholder="I know it's personal, but you're safe here">
+      </div>
+      <div class="form-control">
+        <p>What is your gender?</p>
+        <div>
+          <input type="radio" name="gender" value="male" id="male"> 
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" value="female" id="female"> 
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <p><label for="occupation">Are you employed?</label></p>
+        <select id="dropdown" name="occupation">
+          <option value="unemployed">I'm currently unemployed</option>
+          <option value="myself">I work all by myself</option>
+          <option value="company">I work in a company</option>
+          <option value="student">I study, so that I can work in the future</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <p>What do you like most?</p>
+        <div class="check-box">
+           <input type="checkbox" name="interests" value="sports">
+           <label for="sports">Sports</label>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="interests" value="tech">
+          <label for="female">Tech</label>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="interests" value="TV">
+          <label for="female">TV</label>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="interests" value="theater">
+          <label for="female">Theater</label>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="interests" value="cooking">
+          <label for="female">Cooking</label>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="interests" value="reading">
+          <label for="female">Reading</label>
+        </div>
+        <div class="check-box">
+           <input type="checkbox" name="interests" value="sleeping">
+           <label for="female">Sleeping</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="description">Use your words to describe yourself.</label>
+        <textarea name="description" id="profile" rows="10"></textarea>
+      </div>
+      <div class="submit-box">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  
+</main>
+<footer>
+  <div class="loader"></div>
+  <p>This site was an exercise by Daniel Marcelo</p>
+</footer>
+</body>
+</html>
